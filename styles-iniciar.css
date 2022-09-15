@@ -259,8 +259,9 @@ a:active {
     justify-content: space-between;
     gap: 80px;
     max-width: 400px;
-    padding-left: 40px;
-
+    padding: 16px;
+    outline: 1px solid #282828;
+    border-radius: 4px;
 
 }
 
@@ -274,12 +275,13 @@ a:active {
     font-size: 16px;
 }
 
+/* 
 .init-form {
-    outline: 1px solid #282828;
-    border-radius: 4px;
-    padding: 16px;
+    
+    
+    padding: 16px; 
     margin-top: 16px;
-}
+} */
 
 .check-form {
     font-size: 11px;
@@ -301,10 +303,8 @@ a:active {
 }
 
 
-.buttons-form {
-    display: flex;
-    gap: 16px;
-    padding-top: 16px;
+.buttons-container {
+    text-align: center;
 }
 
 .salas-button {
@@ -316,11 +316,15 @@ a:active {
     font-weight: 900;
     font-size: 15px;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;
     transition: all 0.2s linear;
     border-radius: 8px;
     font-family: 'Quicksand', sans-serif;
     border-style: none;
+    align-items: center;
+
+
 }
 
 .salas-button:hover {
@@ -380,10 +384,10 @@ a:active {
         width: 360px;
     }
 
-    .buttons-form{
+    .buttons-form {
         flex-wrap: wrap;
         justify-content: center;
-    }    
+    }
 }
 
 /* Fin media query INICIO*/
@@ -433,7 +437,7 @@ a:active {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    padding-top: 20px;
+   padding-top: 10px;
 }
 
 .buttons-container .btn {
